@@ -111,8 +111,6 @@ export default function RockPaperScissors() {
                                 auth: {
                                     options:[
                                         "google",
-                                        "discord",
-                                        "telegram",
                                         "email",
                                         "facebook",
                                         "passkey",
@@ -235,7 +233,7 @@ export default function RockPaperScissors() {
                                                 borderRadius: '4px',
                                                 cursor: 'pointer'
                                             }}
-                                        >Claim Prize</button>
+                                        >Claim SATs</button>
                                     )}
                                     {showModal && (
                                         <div style={{
@@ -256,8 +254,8 @@ export default function RockPaperScissors() {
                                                 maxWidth: '300px',
                                                 textAlign: 'center'
                                             }}>
-                                                <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Claim 10 Tokens!</h2>
-                                                <p style={{ marginBottom: '1rem' }}>You won and can claim 10 tokens to your wallet.</p>
+                                                <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Claim 10 SATs!</h2>
+                                                <p style={{ marginBottom: '1rem' }}>You won and can claim 10 SATs to your wallet.</p>
 
                                                 <TransactionButton
                                                     transaction={() => claimTo({
